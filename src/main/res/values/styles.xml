@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#0084cf</item>
+        <item name="colorAccent">#000</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+
+    <style name="title" parent="">
+        <item name="android:textColor">#ff0092f4</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="titleBig" parent="">
+        <item name="android:textColor">#ff0092f4</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="editText" parent="">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:ellipsize">end</item>
+        <!--<item name="android:maxEms">13</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="editTextBig" parent="">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:ellipsize">end</item>
+        <!--<item name="android:maxEms">13</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:focusable">false</item>
+    </style>
+</resources>

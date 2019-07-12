@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0084cf"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内托代码:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/inside_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分段:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/sub_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安装托盘号:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/install_tray_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件类型:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件材质:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件规格:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="表面处理代码:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/surface_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件号:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件长度:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/pile_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管件重量:"
+                style="@style/title"/>
+
+            <EditText
+                android:id="@+id/pile_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条码:"
+                style="@style/title" />
+
+            <EditText
+                android:id="@+id/bar_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editText"
+                android:theme="@style/MyEditText"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

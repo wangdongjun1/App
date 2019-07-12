@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#0084cf">
+
+    <TextView
+        android:id="@+id/bar_ser_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="#a6a3a3"
+        android:gravity="center"
+        android:hint="请扫描二维码!"
+        android:singleLine="true"
+        android:textColor="#0084cf"
+        android:textSize="25sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="工程编号:"
+                    android:gravity="center"
+                    android:textColor="#ff0092f4"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:id="@+id/bar_ser_pro_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:textAllCaps="true"
+                    android:ellipsize="end"
+                    android:maxEms="25"
+                    android:singleLine="true"
+                    android:textSize="17sp"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="图        号:"
+                    android:gravity="center"
+                    android:textColor="#ff0092f4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/bar_ser_chart_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:textAllCaps="true"
+                    android:ellipsize="end"
+                    android:maxEms="25"
+                    android:singleLine="true"
+                    android:textSize="17sp"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="管  件  号:"
+                    android:gravity="center"
+                    android:textColor="#ff0092f4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/bar_ser_pipe_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:textAllCaps="true"
+                    android:ellipsize="end"
+                    android:maxEms="25"
+                    android:singleLine="true"
+                    android:textSize="17sp"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#18acd9"
+        android:gravity="center"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/bar_ser_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+    <ListView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bar_ser_list"
+        android:background="#ffff"
+        ></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/bar_ser_batch_num"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="请输入批次号"
+            android:maxEms="25"
+            android:singleLine="true"
+            android:theme="@style/MyEditText" />
+        <Button
+            android:id="@+id/bar_ser_btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

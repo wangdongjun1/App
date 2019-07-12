@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0084cf"
+    >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#FFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etScanBarQr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="请输入管件条形码!"
+            android:background="#eeeeee"
+            android:textColor="#0084cf"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="条形码"
+            android:textColor="#0084cf"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etInputNum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="请输入条形码"
+            android:singleLine = "true"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:textColorHint="#c6c6c6"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="二维码"
+            android:textColor="#0084cf"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etSearchQr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="请输入二维码"
+            android:textColorHint="#c6c6c6"
+            android:singleLine = "true"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

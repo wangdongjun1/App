@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#0084cf">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/bar_handover_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:hint="请输入交接单号!"
+        android:textAllCaps="true"
+        android:singleLine="true"
+        android:textColor="#0084cf"
+        android:textSize="25sp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#000"/>
+    <LinearLayout
+        android:id="@+id/bar_ser_btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="#0084cf"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0084cf"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="工程编号:"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bar_ser_pro_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="处理类型:"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bar_ser_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:text="实物框号:"
+                android:textSize="17sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bar_ser_fram_num"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text=""
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textSize="17sp"
+                android:text="交接日期:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bar_ser_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text=""
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bar_ser_list"
+        android:background="#ffff"
+        ></ListView>
+
+
+</LinearLayout>

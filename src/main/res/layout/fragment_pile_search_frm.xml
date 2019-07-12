@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0084cf"
+    android:orientation="vertical"
+    >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="10dp"
+               android:paddingLeft="20dp"
+               android:background="#ffff"
+               >
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="4"
+                   android:orientation="vertical"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="管件号:"
+                           android:textColor="#ff0092f4"
+                           android:textSize="15sp" />
+
+                       <EditText
+                           android:id="@+id/pile_num"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:paddingLeft="15dp"
+                           android:textAllCaps="true"
+                           android:ellipsize="end"
+                           android:maxEms="13"
+                           android:singleLine="true"
+                           android:text=""
+                           android:textSize="15sp"
+                           android:theme="@style/MyEditText" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="图     号:"
+                           android:textColor="#ff0092f4"
+                           android:textSize="15sp" />
+
+                       <EditText
+                           android:id="@+id/pile_image"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:paddingLeft="15dp"
+                           android:textAllCaps="true"
+                           android:ellipsize="end"
+                           android:maxEms="13"
+                           android:singleLine="true"
+                           android:text=""
+                           android:textSize="15sp"
+                           android:theme="@style/MyEditText" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="工程号:"
+                           android:textColor="#ff0092f4"
+                           android:textSize="15sp" />
+
+                       <EditText
+                           android:id="@+id/pile_project"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:paddingLeft="15dp"
+                           android:ellipsize="end"
+                           android:textAllCaps="true"
+                           android:maxEms="13"
+                           android:singleLine="true"
+                           android:text=""
+                           android:textSize="15sp"
+                           android:theme="@style/MyEditText" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_margin="5dp"
+                       android:id="@+id/handover_check">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:text="点击搜索交接单号"
+                           android:textColor="#ffff"
+                           android:background="@color/colorPrimary"
+                           android:textSize="20sp" />
+                   </LinearLayout>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   >
+                   <LinearLayout
+                       android:id="@+id/btn_search"
+                       android:layout_width="109dp"
+                       android:layout_height="match_parent"
+                       android:background="#18acd9"
+                       android:gravity="center"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:text="搜索"
+                           android:textColor="#ffff"
+                           android:textSize="20sp" />
+                   </LinearLayout>
+               </LinearLayout>
+
+           </LinearLayout>
+
+    <TextView
+        android:id="@+id/etScanPileQr"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#a6a3a3"
+        android:gravity="center"
+        android:hint="请扫描二维码"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条     码:"
+                android:textColor="#ff0092f4"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pile_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:textAllCaps="true"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="15sp"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码:"
+                android:textColor="#ff0092f4"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pile_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ECEFF0" >
+
+        <ListView
+            android:id="@+id/pile_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#DADBDA"
+            android:dividerHeight="1px"
+            android:paddingLeft="15dp"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
